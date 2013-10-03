@@ -1,6 +1,6 @@
 Revision history for SHARYANTO-Data-Util
 
-0.56    2013-09-11 (SHARYANTO)
+0.56    2013-10-03 (SHARYANTO)
 
         - No functional changes. Split from SHARYANTO-Utils to minimize
           dependencies (I'm trying to make Perinci::CmdLine work under Windows).
