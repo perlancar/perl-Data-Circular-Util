@@ -141,6 +141,8 @@ sub has_circular_ref {
 
 =head1 SEE ALSO
 
+L<SHARYANTO>
+
 L<Data::Structure::Util> has the XS/C version of C<has_circular_ref> which is 3
 times or more faster than this module's implementation which is pure Perl). Use
 that instead if possible (in some cases, Data::Structure::Util fails to build
