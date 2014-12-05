@@ -1,4 +1,7 @@
-package SHARYANTO::Data::Util;
+package Data::Circular::Util;
+
+# DATE
+# VERSION
 
 use 5.010001;
 use strict;
@@ -8,8 +11,6 @@ use warnings;
 require Exporter;
 our @ISA = qw(Exporter);
 our @EXPORT_OK = qw(clone_circular_refs has_circular_ref);
-
-# VERSION
 
 our %SPEC;
 
@@ -143,10 +144,12 @@ sub has_circular_ref {
 
 L<SHARYANTO>
 
-L<Data::Structure::Util> has the XS/C version of C<has_circular_ref> which is 3
-times or more faster than this module's implementation which is pure Perl). Use
-that instead if possible (in some cases, Data::Structure::Util fails to build
-and this module provides an alternative for that function).
+L<Data::Structure::Util> has the XS version of C<has_circular_ref> which is at
+least around 3 times faster than this module's implementation which is pure
+Perl. Use that instead if possible (in some cases, Data::Structure::Util fails
+to build and this module provides an alternative for that function).
+Data::Structure::Util does not the equivalent of this module's
+C<clone_circular_refs> though.
 
 This module is however much faster than L<Devel::Cycle>.
 

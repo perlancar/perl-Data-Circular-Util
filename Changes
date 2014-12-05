@@ -1,4 +1,9 @@
-Revision history for SHARYANTO-Data-Util
+Revision history for Data-Circular-Util
+
+0.58    2014-12-05 (PERLANCAR) (unreleased)
+
+	- Rename module/dist from SHARYANTO-Data-Util to Data-Circular-Util.
+
 
 0.57    2013-11-12 (SHARYANTO)
 

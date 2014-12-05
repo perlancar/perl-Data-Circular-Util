@@ -6,10 +6,10 @@ use warnings;
 
 use Test::More 0.98;
 
-use SHARYANTO::Data::Util qw(
-                                has_circular_ref
-                                clone_circular_refs
-                        );
+use Data::Circular::Util qw(
+                               has_circular_ref
+                               clone_circular_refs
+                       );
 
 subtest has_circular_ref => sub {
     ok(!has_circular_ref(undef), "undef");
