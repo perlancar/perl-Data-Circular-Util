@@ -54,7 +54,6 @@ _
     result_naked => 1,
 };
 sub clone_circular_refs {
-    require Data::Structure::Util;
     require Data::Clone;
 
     my ($data) = @_;
@@ -85,7 +84,7 @@ sub clone_circular_refs {
         }
     };
     $doit->($data);
-    !Data::Structure::Util::has_circular_ref($data);
+    !has_circular_ref($data);
 }
 
 $SPEC{has_circular_ref} = {
