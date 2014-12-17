@@ -131,7 +131,7 @@ sub has_circular_ref {
 }
 
 1;
-# ABSTRACT: Data utilities
+# ABSTRACT:
 
 =head1 SYNOPSIS
 
